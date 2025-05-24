@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main(void) {
+  scanf("Please enter some text: ");
+
+  return 0;
+}
