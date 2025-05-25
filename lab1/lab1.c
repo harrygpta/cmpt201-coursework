@@ -1,0 +1,41 @@
+// Lab1: Use getline() for user input
+// and strtok_r() for tokenization
+
+//  May 22, 2025
+// Author: Harshit (Harry) Gupta
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void) {
+
+  char *text = NULL;
+  size_t length = 0;
+
+  size_t read;
+  char *token = NULL;
+  char *save;
+
+  printf("Please enter some text: ");
+
+  read = getline(&text, &length, stdin);
+
+  if (read == -1) {
+    printf("getline did not work");
+    return 0;
+  }
+
+  token = strtok_r(text, " ", &save);
+  printf("Tokens: \n");
+
+  while (token) {
+    printf("  %s\n", token);
+    token = strtok_r(NULL, " ", &save);
+  }
+
+  free(token);
+  free(text);
+
+  return 0;
+}
