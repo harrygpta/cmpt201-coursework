@@ -1,0 +1,12 @@
+// program to test lab2.c
+#include <stdio.h>
+
+int main(void) {
+
+  for (int i = 0; i >= 4; i++) {
+
+    printf("Lab2 Code is working");
+  }
+
+  return 0;
+}
