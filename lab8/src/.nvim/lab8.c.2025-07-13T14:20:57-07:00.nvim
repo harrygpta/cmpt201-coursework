@@ -1,0 +1,177 @@
+Last login: Sun Jul 13 13:48:58 on console
+harrygupta@Harrys-MacBook-Pro-6 ~ % docker start -ai cmpt201
+
+Updating Oh My Zsh
+No changes to mention.
+You can see the changelog with `omz changelog`
+         __                                     __
+  ____  / /_     ____ ___  __  __   ____  _____/ /_
+ / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \
+/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / /
+\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/
+                        /____/
+
+Hooray! Oh My Zsh has been updated!
+
+To keep up with the latest news and updates, follow us on X: https://x.com/ohmyzsh
+Want to get involved in the community? Join our Discord: https://discord.gg/ohmyzsh
+Get your Oh My Zsh swag at: https://shop.planetargon.com/collections/oh-my-zsh
+
+Ｗｅｌｃｏｍｅ  ｔｏ  ＣＭＰＴ  ２０１！
+
+"Legacy code is code without tests."
+	-- Michael Feathers
+
+~❯ ls
+cmpt201-coursework  lecture  log.c  start_here.sh  testDirect  units  work
+~❯ cd cmpt201-coursework
+~/cmpt201-coursework❯ ls
+lab0  lab1  lab2  lab3  lab4  lab5  lab6  lab7  README.md
+~/cmpt201-coursework❯ mkdir lab8
+~/cmpt201-coursework❯ ls
+lab0  lab1  lab2  lab3  lab4  lab5  lab6  lab7  lab8  README.md
+~/cmpt201-coursework❯ cd lab8
+~/cmpt201-coursework/lab8❯ git clone git@github.com:SFU-CMPT-201/lab8.git
+Cloning into 'lab8'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 13 (delta 1), reused 7 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (13/13), 15.69 KiB | 3.92 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+~/cmpt201-coursework/lab8❯ ls
+lab8
+~/cmpt201-coursework/lab8❯ cd
+~❯ ls
+cmpt201-coursework  lecture  log.c  start_here.sh  testDirect  units  work
+~❯ cd cmpt201-coursework
+~/cmpt201-coursework❯ ls
+lab0  lab1  lab2  lab3  lab4  lab5  lab6  lab7  lab8  README.md
+~/cmpt201-coursework❯ cd lab8
+~/cmpt201-coursework/lab8❯ ls
+lab8
+~/cmpt201-coursework/lab8❯ cd lab8
+~/cmpt201-coursework/lab8/lab8❯ ls
+CMakeLists.txt  include  src
+~/cmpt201-coursework/lab8/lab8❯ git commit -m "added lab8"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+~/cmpt201-coursework/lab8/lab8❯ git add .
+~/cmpt201-coursework/lab8/lab8❯ git commit -m "added lab8"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+~/cmpt201-coursework/lab8/lab8❯ git push
+ERROR: Permission to SFU-CMPT-201/lab8.git denied to harrygpta.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+~/cmpt201-coursework/lab8/lab8❯ cd
+~❯ ls
+cmpt201-coursework  lecture  log.c  start_here.sh  testDirect  units  work
+~❯ cd cmpt201-coursework
+~/cmpt201-coursework❯ ls
+lab0  lab1  lab2  lab3  lab4  lab5  lab6  lab7  lab8  README.md
+~/cmpt201-coursework❯ rmdir lab8
+rmdir: failed to remove 'lab8': Directory not empty
+~/cmpt201-coursework❯ rm -rf lab8
+~/cmpt201-coursework❯ ls
+lab0  lab1  lab2  lab3  lab4  lab5  lab6  lab7  README.md
+~/cmpt201-coursework❯ clear
+~/cmpt201-coursework❯ ls
+lab0  lab1  lab2  lab3  lab4  lab5  lab6  lab7  README.md
+~/cmpt201-coursework❯ cd lab8
+cd: no such file or directory: lab8
+~/cmpt201-coursework❯ ls
+lab0  lab1  lab2  lab3  lab4  lab5  lab6  lab7  README.md
+~/cmpt201-coursework❯ mkdir lab8
+~/cmpt201-coursework❯ ls
+lab0  lab1  lab2  lab3  lab4  lab5  lab6  lab7  lab8  README.md
+~/cmpt201-coursework❯ cd lab8
+~/cmpt201-coursework/lab8❯ ls
+~/cmpt201-coursework/lab8❯ cd include
+cd: no such file or directory: include
+~/cmpt201-coursework/lab8❯ mkdir include
+~/cmpt201-coursework/lab8❯ mkdir src
+~/cmpt201-coursework/lab8❯ nvim CMakeLists.txt
+~/cmpt201-coursework/lab8❯ ls
+CMakeLists.txt  include  src
+~/cmpt201-coursework/lab8❯ cd include
+~/cmpt201-coursework/lab8/include❯ nvim uthash.h
+~/cmpt201-coursework/lab8/include❯ ls
+uthash.h
+~/cmpt201-coursework/lab8/include❯ cd ..
+~/cmpt201-coursework/lab8❯ ls
+CMakeLists.txt  include  src
+~/cmpt201-coursework/lab8❯ cd src
+~/cmpt201-coursework/lab8/src❯ ls
+~/cmpt201-coursework/lab8/src❯ nvim lab8.c
+~/cmpt201-coursework/lab8/src❯ ls
+lab8.c
+~/cmpt201-coursework/lab8/src❯ cd ..
+~/cmpt201-coursework/lab8❯ ls
+CMakeLists.txt  include  src
+~/cmpt201-coursework/lab8❯ git add .
+~/cmpt201-coursework/lab8❯ git commit -m "added lab8"
+[main da301d6] added lab8
+ 9 files changed, 2678 insertions(+)
+ create mode 100644 lab8/.nvim/CMakeLists.txt.2025-07-13T14:08:47-07:00.hash
+ create mode 100644 lab8/.nvim/CMakeLists.txt.2025-07-13T14:08:47-07:00.nvim
+ create mode 100644 lab8/CMakeLists.txt
+ create mode 100644 lab8/include/.nvim/uthash.h.2025-07-13T14:09:16-07:00.hash
+ create mode 100644 lab8/include/.nvim/uthash.h.2025-07-13T14:09:16-07:00.nvim
+ create mode 100644 lab8/include/uthash.h
+ lab8.c
+    1 // Lab 8 - Starting Code for sorting data in threads using uthash
+E   2 #include "uthash.h"     ■■ 'uthash.h' file not found [clang-diagnostic-error]
+    3 #include <pthread.h>
+    4 #include <stdio.h>
+    5 #include <stdlib.h>
+    6 #define THREAD_COUNT 3
+    7 typedef const char *word_t;
+    8
+    9 typedef struct {
+   10 ┆ word_t word;
+   11 ┆ size_t count;
+   12 ┆ UT_hash_handle hh;
+   13 } word_count_entry_t;
+   14
+   15 word_count_entry_t *create_entry(word_t, size_t);
+   16
+   17 typedef word_count_entry_t *count_map_t;
+   18
+   19 typedef struct {
+   20 ┆ count_map_t *map;
+   21 ┆ word_t *words;
+   22 ┆ size_t num_words;
+   23 ┆ pthread_mutex_t *lock;
+   24 } count_thread_args_t;
+   25
+   26 count_thread_args_t *pack_args(count_map_t *map, word_t *words,
+   27 ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆  size_t num_words, pthread_mutex_t *lock);
+   28
+   29 static void add_word_counts_in_chunk(count_map_t *map, word_t *words,
+   30 ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆ ┆  size_t num_words, pthread_mutex_t *lock) {
+   31 ┆ // --------- Task 4 --------- \\
+   32 ┆ // Make this function thread-safe by using the lock
+   33 ┆
+   34 ┆ for (size_t i = 0; i < num_words; i++) {
+   35 ┆ ┆ word_count_entry_t *w = NULL;
+   36 ┆ ┆ HASH_FIND_STR(*map, words[i], w);
+   37 ┆ ┆
+   38 ┆ ┆ if (w) {
+   39 ┆ ┆ ┆ w->count++;
+   40 ┆ ┆ } else {
+   41 ┆ ┆ ┆ w = create_entry(words[i], 1);
+   42 ┆ ┆ ┆ HASH_ADD_STR(*map, word, w);
+   43 ┆ ┆ }
+   44 ┆ }
+   45 }
+   46
+   47 static void *counter_thread_func(void *);
+ NORMAL  lab8.c                                                                         E: 2  unix | utf-8 | c    0%    1:1
+

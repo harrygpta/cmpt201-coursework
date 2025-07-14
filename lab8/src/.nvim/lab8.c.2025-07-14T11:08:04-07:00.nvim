@@ -198,3 +198,4 @@ static void *counter_thread_func(void *param) {
 
   return NULL;
 }
+
